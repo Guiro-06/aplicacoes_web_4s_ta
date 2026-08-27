@@ -1,6 +1,6 @@
 package com.example.imagemPecas.domain.enums;
 
-public enum ImageExtension {
+public enum ImageExtension  {
     PNG,
     JPG,
     GIF

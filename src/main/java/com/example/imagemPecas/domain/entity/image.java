@@ -1,5 +1,6 @@
 package com.example.imagemPecas.domain.entity;
 
+
 import com.example.imagemPecas.domain.enums.ImageExtension;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -18,7 +19,8 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-    public class image {
+public class image {
+    @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     @Column
@@ -26,7 +28,7 @@ import java.time.LocalDateTime;
     @Column
     private Long size;
     @Column
-    @Enumerated
+    @Enumerated(EnumType.STRING)
     private ImageExtension extension;
     @Column
     @CreatedDate
