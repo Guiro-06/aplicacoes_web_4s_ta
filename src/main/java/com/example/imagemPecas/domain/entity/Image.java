@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class image {
+public class Image {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
